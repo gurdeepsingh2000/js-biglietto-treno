@@ -1,7 +1,17 @@
 var number_km = prompt('Inserisci quanti km vuoi percorrere');
 var number_age = prompt('Inserisci la tua età');
-var ticket_price_km = parseInt(0,21);
-var x = ticket_price_km * 20 / 100;
-var y = parseInt(40)
+var x = ticket_price * 20 / 100;
+var y = ticket_price * 40 / 100;
+var ticket_price = 0.21
 
-document.getElementById ('sconto').innerHTML = x ;
+if (number_age < 18) {
+    document.getElementById ('sconto').innerHTML = 'Questo è il prezzo scontato' + number_km * ticket_price - x ;
+}
+
+else if (number_age > 65) {
+    document.getElementById ('sconto').innerHTML = 'Questo è il prezzo scontato' + ((number_km * ticket_price) - ( number_km * y)) ;
+}
+
+else if ( number_age => 18  && number_age <= 65) {
+    document.getElementById ('sconto').innerHTML = number_km * ticket_price ;
+}
