@@ -1,5 +1,6 @@
 var number_km = prompt('Inserisci quanti km vuoi percorrere');
-var number_age = prompt('Inserisci la tua data di nascita');
+var date_of_birth = prompt('Inserisci la tua data di nascita');
+var number_age = 2021 - parseInt(date_of_birth);
 var ticket_price = 0.21 * parseInt(number_km) ;
 var x = ticket_price * 20 / 100;
 var y = ticket_price * 40 / 100;
