@@ -9,13 +9,13 @@ document.getElementById ('sconto').innerHTML = ticket_price;
 
 
 if (number_age < 18) {
-    document.getElementById ('sconto').innerHTML = 'Questo è il prezzo scontato' + deal_price_20;
+    document.getElementById ('sconto').innerHTML = 'Questo è il prezzo scontato ' + '€' + deal_price_20;
 }
 
 else if (number_age > 65) {
-    document.getElementById ('sconto').innerHTML = 'Questo è il prezzo scontato' + deal_40_price;
+    document.getElementById ('sconto').innerHTML = 'Questo è il prezzo scontato ' + '€' + deal_40_price;
 }
 
 else if (number_age >= 18 && number_age <= 65 ) {
-    document.getElementById ('sconto').innerHTML = 'Prezzo non scontato ' + ticket_price;
+    document.getElementById ('sconto').innerHTML = 'Prezzo non scontato ' + '€' + ticket_price;
 }
